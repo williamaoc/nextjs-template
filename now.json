@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "alias": "williamaoc_nextjs",
-  "name": "williamaoc_nextjs",
+  "alias": "williamaoc-nextjs",
+  "name": "williamaoc-nextjs",
   "builds": [
     { "src": "next.config.js", "use": "@now/next" }
   ]
