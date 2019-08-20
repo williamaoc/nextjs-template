@@ -2,9 +2,33 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 const Card = styled.div`
-  width: 480px;
-  height: 640px;
-  border: solid 1px black;
+
+
+.logo {
+    margin-top: 30px;
+    margin-left: 30px;
+
+}  
+  .church-text {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+  }
+
+  .name-text {
+    font-size: 10px;
+    letter-spacing: 10px;
+    text-indent: 20px;
+    color: white;
+  }
+  
+
+.card {
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: hsl(215, 62%, 21%);
+  }
 `;
 
 const A = styled.a``;
@@ -24,11 +48,17 @@ const Wrapper = styled.div`
 `;
 
 const IndexPage = () => (
+
   <Wrapper>
-    <Card />
-    <Link href='/about' passHref>
-      <A>About Page</A>
-    </Link>
+    <Card>
+      <div className='card'>
+
+
+  <img className='logo' src='/static/logo.svg' />
+  <p className='church-text'>新生命小組教會</p>
+  <p className='name-text'>朱家瑋</p>
+      </div>
+    </Card>
   </Wrapper>
 );
 
